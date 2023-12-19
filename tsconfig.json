@@ -1,0 +1,27 @@
+{
+  "include": ["src"],
+  "exclude": ["**/node_modules"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "lib/types",
+    "outDir": "lib",
+    "module": "ES2022",
+    "target": "ES6",
+    "lib": [
+      "ES6",
+      "ES2016",
+      "ES2017",
+      "dom"
+    ],
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "Bundler",
+    "typeRoots": [
+      "node_modules/@types", "@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
